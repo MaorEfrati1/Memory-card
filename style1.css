@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #1abc9c;
+    background-image: linear-gradient(to top left, #9b59b6, #1abc9c);
+    font-family: arial;
+    position: relative;
+    text-align: center;
+    align-items: center;
+
+}
+
+/* HEADER */
+header {
+    color: white;
+    letter-spacing: 10px;
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        font-size: 28px;
+    }
+
+    header h1 {
+        font-weight: 400;
+    }
+}
+
+/* ASIDE */
+#aside {
+    float: left;
+    width: 30%;
+    color: #34495E;
+}
+
+#aside p {
+    display: inline;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+#aside h2 {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+
+/* main SECTION */
+#main4X4 {
+    background: white;
+    width: 250px;
+    height: 345px;
+    margin: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #main4X4 {
+        width: 390px;
+        height: 480px;
+    }
+}
+
+/* STATUS bar */
+#state4X4 {
+    background: #6186aa;
+    background-size: 250%;
+    width: 230px;
+    line-height: 25px;
+    float: left;
+    margin: 10px 0 0 10px;
+    padding: 0 10px;
+    color: white;
+    font-size: 19px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #state4X4 {
+        width: 370px;
+        line-height: 35px;
+    }
+}
+
+#TurnOf4X4 {
+    font-size: 19px;
+    color: black;
+    float: left;
+}
+
+#TurnOf4X4::after {
+    color: black;
+    content: "'s Turn";
+}
+
+#timer4X4 {
+    float: right;
+}
+
+#timer4X4::before {
+    content: "Timer: ";
+}
+
+#timer4X4::after {
+    content: " sec";
+}
+
+#scoreP1 p {
+    float: left;
+    display: inline;
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#scoreP2 {
+    float: right;
+    font-size: 19px;
+}
+
+#scoreP2 p {
+    float: right;
+    display: inline;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.box4X4 {
+    background: #6186aa;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px 0 0 10px;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .box4X4 {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* main SECTION */
+#main5X5 {
+    background: white;
+    width: 250px;
+    height: 345px;
+    margin: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    #main5X5 {
+        width: 485px;
+        height: 575px;
+    }
+}
+
+
+/* STATUS bar */
+#state5X5 {
+    background: #6186aa;
+    background-size: 250%;
+    width: 230px;
+    line-height: 25px;
+    float: left;
+    margin: 10px 0 0 10px;
+    padding: 0 10px;
+    color: white;
+    font-size: 16px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #state5X5 {
+        width: 465px;
+        line-height: 35px;
+    }
+}
+
+#TurnOf5X5 {
+    font-size: 19px;
+    color: black;
+    float: left;
+}
+
+#TurnOf5X5::after {
+    color: black;
+    content: "'s Turn";
+}
+
+#timer5X5 {
+    float: right;
+}
+
+#timer5X5::before {
+    content: "Timer: ";
+}
+
+#timer5X5::after {
+    content: " sec";
+}
+
+#scoreP1 p {
+    float: left;
+    display: inline;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#scoreP2 p {
+    float: left;
+    display: inline;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+.box5X5 {
+    background: #6186aa;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px 0 0 10px;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .box5X5 {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+/* PRE Game modal window */
+#pre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+
+#themes {
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background: white;
+    color: #6186aa;
+}
+
+
+
+#themes p {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: solid 1px;
+    background: white;
+    color: #6186aa;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#themes p:hover {
+    background: #6186aa;
+    background-size: 250%;
+    color: white;
+}
+
+#pre h2,
+#post h2,
+#playerName h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* cards 4X4  */
+.box4X4.play:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    /* transform: scale(1.05); */
+
+}
+
+
+.box4X4 img {
+    width: 100%;
+    display: block;
+    border: solid 1px transparent;
+    /* transform: scale(1.05); */
+}
+
+.box4X4 .outlined {
+    border: solid 1px #34495e;
+    background: #1abc9c;
+    opacity: 0.7;
+    transform: scale(1.15);
+
+}
+
+
+/* cards 5X5 */
+.box5X5.play:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    /* transform: scale(1.05); */
+}
+
+.box5X5 img {
+    width: 100%;
+    display: block;
+    border: solid 1px transparent;
+    /* transform: scale(1.05); */
+
+}
+
+
+.box5X5 .outlined {
+    border: solid 1px #34495e;
+    background: #1abc9c;
+    opacity: 0.7;
+    transform: scale(1.15);
+
+}
+
+#gameSize,
+#Joker {
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background: #1abc9c;
+    background-image: linear-gradient(to top left, #9b59b6, #1abc9c);
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#gameSize button,
+#Joker button {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+#gameSize h2,
+#Joker h2 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#gameSize p,
+#Joker p {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#playersName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#playersName {
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    background: #1abc9c;
+    background-image: linear-gradient(to top left, #9b59b6, #1abc9c);
+    color: whitesmoke;
+}
+
+
+#playersName h2 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#playersName h3 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#playersName input {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* POST modal window */
+#post4X4,
+#post5X5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+#post4X4>div,
+#post5X5>div {
+    width: 300px;
+    padding: 20px 0 40px;
+    background: white;
+    color: #6186aa;
+}
+
+#post4X4 p:first-child,
+#post5X5 p:first-child,
+#post4X4 #final4X4,
+#post5X5 #final5X5 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+#post4X4 #again4X4,
+#post5X5 #again5X5 {
+    color: #6186aa;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 20px;
+    width: 160px;
+    border: solid 1px;
+}
+
+#post4X4 #again4X4:hover,
+#post5X5 #again5X5:hover {
+    background: #6186aa;
+    background-size: 250%;
+    color: white;
+    cursor: pointer;
+}
+
+#post4X4 h2,
+#post5X5 h2 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+footer p {
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+footer p a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block;
+
+}
+
+.click {
+    transition: transform 1s;
+    transform: rotateY(360deg);
+}
+
+.Out {
+    transition: transform 0.6s;
+    transform: rotateY(180deg);
+}
